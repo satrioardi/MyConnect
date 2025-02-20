@@ -19,22 +19,34 @@ Welcome to my take-home test submission for the **Quality Assurance Tester** pos
 For Task 1, I implemented E2E tests for user authentication using **Playwright**. The test cases cover valid and invalid login scenarios, along with testing a wrong password input.
 
 ### **Test Cases Implemented**
-1. **Valid User Login:**
-   - Scenario: A user logs in with valid credentials.
-   - Action: Username: `kminchelle`, Password: `0lelplR`.
-   - Expected Result: User is redirected to the dashboard with a welcome message or token.
-   
-2. **Invalid User Login (User Not Found):**
-   - Scenario: A user tries to log in with an invalid username.
-   - Action: Username: `invalidUser`, Password: `wrongPassword`.
-   - Expected Result: Login attempt fails with an appropriate error message.
-   
+1. **Valid User Login:**  
+2. **Invalid User Login (User Not Found):**   
 3. **Wrong Password Test:**
-   - Scenario: A user enters the correct username but provides the wrong password.
-   - Action: Username: `kminchelle`, Password: `wrongPassword`.
-   - Expected Result: Login attempt fails with an appropriate error message.
 
 ### **Test Execution**
 - To run the test, clone the repository and install the dependencies by running:
   ```bash
   npm install
+  npx playwright test tests
+
+## ⚙️ **Task 2: EPI Automation Testing (Postman & Newman)**
+
+### **Overview**
+For Task 2, I created and automated the testing of the Login API using Postman and Newman. Below are the various test cases designed to verify different scenarios, such as valid and invalid login, missing passwords, and incorrect username formats.
+
+### **Test Cases Implemented**
+1. **Valid Login Test:**  
+2. **Invalid Login (User Not Found):**   
+3. **Missing Password Field Test:**
+4. **Invalid Username Format Test:**
+
+### **Test Execution**
+-Open Postman and import the collection from the postman_collection.json file.
+-Execute the tests in Postman and verify the results.
+-For automated execution with Newman (Postman CLI), use the following command
+ ```bash
+newman run MyConnect_Task2.postman_collection.json
+
+
+
+
