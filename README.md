@@ -48,5 +48,8 @@ For Task 2, I created and automated the testing of the Login API using Postman a
 newman run MyConnect_Task2.postman_collection.json
 
 
+## ⚙️ **Task 3: Load and Performance Testing (JMeter) **
+
+
 
 
