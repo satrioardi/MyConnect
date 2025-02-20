@@ -8,9 +8,6 @@ Welcome to my take-home test submission for the **Quality Assurance Tester** pos
 1. [Task 1: End-to-End (E2E) Automation Testing](#task-1)
 2. [Task 2: API Automation Testing](#task-2)
 3. [Task 3: Load and Performance Testing](#task-3)
-4. [Execution and Setup](#execution-and-setup)
-5. [Conclusion](#conclusion)
-
 ---
 
 ## ⚙️ **Task 1: End-to-End (E2E) Automation Testing (Playwright)**
@@ -43,13 +40,26 @@ For Task 2, I created and automated the testing of the Login API using Postman a
 ### **Test Execution**
 -Open Postman and import the collection from the postman_collection.json file.
 -Execute the tests in Postman and verify the results.
--For automated execution with Newman (Postman CLI), use the following command
- ```bash
-newman run MyConnect_Task2.postman_collection.json
+- For automated execution with Newman (Postman CLI), use the following command
+  ```bash
+  npm install
+  npx playwright test tests
+
+## ⚙️ **Task 3: Load and Performance Testing (JMeter)**
+  
+### **Overview**
+For Task 3, I used JMeter to simulate 50 concurrent users logging into the mock API endpoint. The goal was to test the system's ability to handle multiple simultaneous login requests and measure its performance
+
+### **Test Plan Structure**
+1. **Number of Virtual Users: 50 concurrent users.:**  
+2. **Duration: 30 seconds to simulate a real-world scenario:**   
+3. **Test Endpoint: https://reqres.in/api/login:**
+
+### **Test Execution**
+-Import the provided JMX file into JMeter.
+-Start the test by clicking the "Start" button.
+-JMeter will simulate 50 users, sending login requests to the mock API.
+-You can view the response times and error rates in the JMeter GUI.
 
 
-## ⚙️ **Task 3: Load and Performance Testing (JMeter) **
-
-
-
-
+I hope you find my work valuable. If you have any questions or would like further clarification, feel free to reach out!
