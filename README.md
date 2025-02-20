@@ -42,8 +42,7 @@ For Task 2, I created and automated the testing of the Login API using Postman a
 -Execute the tests in Postman and verify the results.
 - For automated execution with Newman (Postman CLI), use the following command
   ```bash
-  npm install
-  npx playwright test tests
+  newman run postman_collection.json
 
 ## ⚙️ **Task 3: Load and Performance Testing (JMeter)**
   
